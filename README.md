@@ -23,6 +23,7 @@ Replaces `fetch()` with a sinon stub which, in addition to the default sinon beh
 		* `string`: Either an exact url to match e.g. 'http://www.site.com/page.html' or, if the string begins with a `^`, the string following the `^` must begin the url e.g. '^http://www.site.com' would match 'http://www.site.com' or 'http://www.site.com/page.html'
 		* `RegExp`: A regular  expression to test the url against
 		* `Function(url, opts)`: A function that is passed the url and opts `fetch()` is called with and that returns a Boolean
+	* `method`: HTTP method to match.
 	* `response`: Configures the response object returned by the mock. Can take any of the following values
 		* `number`: creates a response with the number as the response status
 		* `string`: creates a 200 response with the string as the response body
